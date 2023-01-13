@@ -19,6 +19,11 @@ public class SpringConfig {
 	public MemberService memberService() {
 		return new MemberService(memberReository);
 	}
+
+	// @Bean // 이거 대신 Component 써도 됨
+	// public TimeTraceAop timeTraceAop() {
+	// 	return new TimeTraceAop();
+	// }
 	// @Bean
 	// public MemberReository memberRepository() {
 	// 	// return new MemoryMemberRepository();
